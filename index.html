@@ -7,6 +7,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="header">
@@ -73,9 +74,72 @@
                     </a>
                 </li>
             </ul>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__link">
+                        <a href="" class="
+                            menu__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                        ">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="" class="
+                            menu__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                        ">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="#pricing" class="
+                            menu__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                        " onclick="closeMenu()">
+                            Pricing
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="" class="
+                            menu__link--anchor
+                            link__hover-effect
+                            link__hover-effect--black
+                        ">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="" class="
+                                menu__link--anchor
+                                link__hover-effect
+                                link__hover-effect--black
+                        ">
+                            Login
+                        </a>
+                    </li>
+                    <li class="menu__link">
+                        <a href="" class="
+                            menu__link--anchor
+                            menu__link--anchor-primary
+                        ">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <header>
-            <div class="container">
+            <div class="container animate--right">
                 <div class="header row">
                     <div class="header__info">
                         <h1 class="header--title">
@@ -108,7 +172,7 @@
     </section>
     <main>
         <section id="features">
-            <div class="container">
+            <div class="container animate--left">
                 <div class="row features--container">
                     <h5 class="features--sub-heading">
                         FEATURES
@@ -198,7 +262,7 @@
             </div>
         </section>
         <section id="quality_work">
-            <div class="container">
+            <div class="container animate--right">
                 <div class="row quality-work--container">
                     <div class="quality-work__info">
                         <h5 class="quality-work__info--sub-header">
@@ -221,7 +285,7 @@
             </div>
         </section>
         <section id="steps">
-            <div class="container">
+            <div class="container animate--left">
                 <div class="row steps--container">
                     <figure class="steps__img--container">
                         <img class="steps__img" src="https://treact.owaiskhan.me/static/media/hero-screenshot-2.241aac1fbc66db29d873.png" alt="">
@@ -279,7 +343,7 @@
             </div>
         </section>
         <section id="pricing">
-            <div class="container">
+            <div class="container animate--right">
                 <div class="row pricing--container">
                     <h5 class="pricing--sub-heading">
                         PRICING
@@ -318,10 +382,10 @@
                             </div>
                             <div class="plan__features white-border">
                                 <div class="plan__features--title">For Small Businesses</div>
-                                <div class="plan__features--feature">60 Templates</div>
-                                <div class="plan__features--feature">15 Landing Pages</div>
-                                <div class="plan__features--feature">22 Internal Pages</div>
-                                <div class="plan__features--feature">Priority Assistance</div>
+                                <div class="plan__features--feature"><span class="white">60 Templates</span></div>
+                                <div class="plan__features--feature"><span class="white">15 Landing Pages</span></div>
+                                <div class="plan__features--feature"><span class="white">22 Internal Pages</span></div>
+                                <div class="plan__features--feature"><span class="white">Priority Assistance</span></div>
                             </div>
                             <div class="plan__footer">
                                 <a class="plan__footer--button plan__business--button" href="">BUY NOW</a>
